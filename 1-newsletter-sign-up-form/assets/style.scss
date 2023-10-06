@@ -1,0 +1,122 @@
+@import "_utilities";
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .main_div {
+    width: 100%;
+    max-width: 700px;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    .list-wrapper {
+        margin-bottom: 2rem;
+        .list-item-wrapper{
+            padding-left: 1rem;
+            .list-item{
+                position: relative;
+                &::before{
+                    content: "\f00c";
+                    font-family: FontAwesome;
+                    margin-right: 5px;
+                    padding: 4px;
+                    font-size: 13px;
+                    border-radius: 50%;
+                    background-color: #fc6455;
+                    color: #fff;                    
+                }
+            }
+        }
+    }
+    .input-wrapper{
+        padding: 1rem;
+        .form-label {
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .form-control {
+            border: 2px solid #000;
+        }
+        .theme-btn{
+            background-color: #fc6455;
+            color: #fff;
+        }
+    }
+    
+
+    .box-wrapper {
+      top: 1rem;
+      margin: 1rem;
+    }
+    .box_img {
+      position: relative;
+    }
+    .box_two {
+      position: absolute;
+      top: 8rem;
+      height: 12rem;
+      width: 10rem;
+      background-color: transparent;
+      border: 0.6rem solid #333;
+      border-radius: 1rem;
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .box_three {
+      position: absolute;
+      top: 3rem;
+      right: 0px;
+      height: 12rem;
+      width: 13.5rem;
+      background-color: #fff;
+      border: 2rem solid #333;
+      border-radius: 0.6rem;
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom: 0;
+      border-left: 0;
+      display: flex;
+      flex-direction: row;
+      .three_one {
+        width: 35%;
+        background: rgb(51, 51, 51);
+        background: linear-gradient(
+          180deg,
+          rgba(51, 51, 51, 0.2207808123249299) 25%,
+          rgba(51, 51, 51, 0.01181722689075626) 89%
+        );
+      }
+    }
+    .bullet_point {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      top: 3.6rem;
+      left: 6.5rem;
+      gap: 0.5rem;
+      .point_one {
+        width: 0.89rem;
+        height: 0.89rem;
+        border-radius: 50%;
+        background-color: orangered;
+      }
+      .point_two {
+        width: 0.89rem;
+        height: 0.89rem;
+        border-radius: 50%;
+        background-color: orange;
+      }
+      .point_three {
+        width: 0.89rem;
+        height: 0.89rem;
+        border-radius: 50%;
+        background-color: greenyellow;
+      }
+    }
+  }
+}
+
