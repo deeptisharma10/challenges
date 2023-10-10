@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_wrapper {
+  width: 50%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  border-bottom-right-radius: 5rem;
+}
+.box_wrapper .date_wrapper {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.box_wrapper .date_wrapper .input_wrapper {
+  flex: 0 0 23%;
+}
+.box_wrapper .date_wrapper .input_wrapper .form-label {
+  font-size: 0.7rem;
+  margin-bottom: 0.1rem;
+}
+.box_wrapper .date_wrapper .input_wrapper .form-label ::-moz-placeholder {
+  font-weight: bold;
+}
+.box_wrapper .date_wrapper .input_wrapper .form-label ::placeholder {
+  font-weight: bold;
+}
+
+.arrow_btn {
+  background-color: #864dfd;
+  color: #fff;
+}
+
+.btn_wrapper {
+  position: relative;
+}
+.btn_wrapper::before {
+  content: "";
+  background: rgba(21, 21, 21, 0.1);
+  height: 1px;
+  width: 90.5%;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+}
+
+.result {
+  margin-left: 2rem;
+}
+.result span {
+  color: #864dfd;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
