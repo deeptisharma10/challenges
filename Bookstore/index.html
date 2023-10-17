@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -17,7 +24,7 @@
    <header>
       <nav>
           <div class="logo">
-              <img src="assets/images/logo (1).png" alt="Logo Image">
+              <img src="assets/images/logo_green.png" alt="Logo Image">
           </div>
           <div class="hamburger">
               <div class="line1"></div>
@@ -26,7 +33,103 @@
           </div>
           <ul class="nav-links">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Solutions</a></li>
+
+              
+<li><a href="#">
+  <section class="dropdown-menu" id="dropdown-menu">
+    <button onclick="handleDropdownClicked(event)">
+      <span class="material-symbols-sharp"> Solutions </span>
+      
+      <!-- <span class="material-symbols-sharp" id="dropdown-icon">  </span> -->
+    </button>
+    <section id="navigation-menu" class="navigation-menu">
+      <div id="main-menu" class="main-menu">
+        <div class="primary-menu">
+          <button onclick="handleMenuLabelClicked('manage-accounts')">
+            <span class="material-symbols-sharp">  Account </span>
+           
+            <span class="chevron material-symbols-sharp">
+                <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </button>
+          <button onclick="handleMenuLabelClicked('admin-dashboard')">
+            <span class="material-symbols-sharp"> </span>
+            Dashboard
+            <span class="chevron material-symbols-sharp">
+                <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </button>
+          <button>
+            <span class="material-symbols-sharp"></span>
+            Sign Out
+            <span class="chevron material-symbols-sharp">
+                <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </button>
+        </div>
+        <section id="manage-accounts" class="secondary-menu" onclick="handleMenuLabelClicked()">
+          <button>
+            <span class="material-symbols-sharp"></span>
+            Inbox
+           
+          </button>
+          <button>
+            <span class="material-symbols-sharp">  </span>
+            Calendar
+            
+          </button>
+          <button>
+            <span class="material-symbols-sharp"> priority </span>
+            Priority
+          </button>
+          <button>
+            <span class="material-symbols-sharp"> forum </span>
+            Community
+          </button>
+        </section>
+        <section id="admin-dashboard" class="secondary-menu" onclick="handleMenuLabelClicked()">
+          <button>
+            <span class="material-symbols-sharp"> data_usage </span>
+            Overview
+          </button>
+          <button>
+            <span class="material-symbols-sharp"> bar_chart_4_bars </span>
+            Performance
+          </button>
+          <button>
+            <span class="material-symbols-sharp"> analytics </span>
+            Analytics
+          </button>
+          <button>
+            <span class="material-symbols-sharp">
+              insights
+            </span>
+            Insights
+          </button>
+          <button>
+            <span class="material-symbols-sharp"> layers </span>
+            Reports
+          </button>
+        </section>
+      </div>
+      </section>
+    </a>
+  </li>
+
+
+
+
+
+              <!-- <li><a href="#">Solutions</a>
+            <ul class="sub-tab">
+                <li class="sub-item">IAS</li>
+                <li class="sub-item">PCS</li>
+                <li class="sub-item">BANK</li>
+                <li class="sub-item">RAILWAYS</li>
+                <li class="sub-item">INSURENCE</li>
+                <li class="sub-item">TEACHING</li>
+            </ul>
+        </li> -->
               <li><a href="#">Products</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Contact Us</a></li>
@@ -37,11 +140,57 @@
       
     </header>
   
+<section class="banner_section">
+ <!-- Slider main container -->
+ <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slide-1">
+            <div class="container">
+                <div class="slider-container">
+                    <h4 class="slider-sub-title">Learn To Face Difficulty</h4>
+                    <div class="animated-area">
+                            <h1 class="slider-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                            <a href="#" class="slider-buttton">Start Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide slide-2">
+            <div class="container">
+                <div class="slider-container">
+                    <h4 class="slider-sub-title">Learn To Face Difficulty slider-2</h4>
+                    <div class="animated-area">
+                            <h1 class="slider-title">Autem ratione corporis itaque minus nihil</h1>
+                            <a href="#" class="slider-buttton">Start Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide slide-3">
+            <div class="container">
+                <div class="slider-container">
+                    <h4 class="slider-sub-title animated">Learn To Face Difficulty slider-3</h4>
+                    <div class="animated-area animated">
+                            <h1 class="slider-title">impedit maxime. Ipsam officiis aliquam sequi sit amet. </h1>
+                            <a href="#" class="slider-buttton">Start Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        ...
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+</section>
 
 
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <script src="assets/custom.js"></script>
 </body>
 
