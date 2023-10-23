@@ -33,95 +33,8 @@
           </div>
           <ul class="nav-links">
               <li><a href="#">Home</a></li>
-
-              
-<li><a href="#">
-  <section class="dropdown-menu" id="dropdown-menu">
-    <button onclick="handleDropdownClicked(event)">
-      <span class="material-symbols-sharp"> Solutions </span>
-      
-      <!-- <span class="material-symbols-sharp" id="dropdown-icon">  </span> -->
-    </button>
-    <section id="navigation-menu" class="navigation-menu">
-      <div id="main-menu" class="main-menu">
-        <div class="primary-menu">
-          <button onclick="handleMenuLabelClicked('manage-accounts')">
-            <span class="material-symbols-sharp">  Account </span>
-           
-            <span class="chevron material-symbols-sharp">
-                <i class="fa-solid fa-chevron-right"></i>
-            </span>
-          </button>
-          <button onclick="handleMenuLabelClicked('admin-dashboard')">
-            <span class="material-symbols-sharp"> </span>
-            Dashboard
-            <span class="chevron material-symbols-sharp">
-                <i class="fa-solid fa-chevron-right"></i>
-            </span>
-          </button>
-          <button>
-            <span class="material-symbols-sharp"></span>
-            Sign Out
-            <span class="chevron material-symbols-sharp">
-                <i class="fa-solid fa-chevron-right"></i>
-            </span>
-          </button>
-        </div>
-        <section id="manage-accounts" class="secondary-menu" onclick="handleMenuLabelClicked()">
-          <button>
-            <span class="material-symbols-sharp"></span>
-            Inbox
-           
-          </button>
-          <button>
-            <span class="material-symbols-sharp">  </span>
-            Calendar
-            
-          </button>
-          <button>
-            <span class="material-symbols-sharp"> priority </span>
-            Priority
-          </button>
-          <button>
-            <span class="material-symbols-sharp"> forum </span>
-            Community
-          </button>
-        </section>
-        <section id="admin-dashboard" class="secondary-menu" onclick="handleMenuLabelClicked()">
-          <button>
-            <span class="material-symbols-sharp"> data_usage </span>
-            Overview
-          </button>
-          <button>
-            <span class="material-symbols-sharp"> bar_chart_4_bars </span>
-            Performance
-          </button>
-          <button>
-            <span class="material-symbols-sharp"> analytics </span>
-            Analytics
-          </button>
-          <button>
-            <span class="material-symbols-sharp">
-              insights
-            </span>
-            Insights
-          </button>
-          <button>
-            <span class="material-symbols-sharp"> layers </span>
-            Reports
-          </button>
-        </section>
-      </div>
-      </section>
-    </a>
-  </li>
-
-
-
-
-
-              <!-- <li><a href="#">Solutions</a>
-            <ul class="sub-tab">
+              <li class="dropdown"><a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li class="sub-item">IAS</li>
                 <li class="sub-item">PCS</li>
                 <li class="sub-item">BANK</li>
@@ -129,8 +42,34 @@
                 <li class="sub-item">INSURENCE</li>
                 <li class="sub-item">TEACHING</li>
             </ul>
-        </li> -->
-              <li><a href="#">Products</a></li>
+        </li>
+              <li class="product-menu"><a href="#">Products </a>
+              <div class="submenu-1">
+                <ul>
+                  <li class="books-menu"><a href="#">books <i class="fa-solid fa-angle-right"></i></a>
+                    <div class="submenu-2">
+                      <ul>
+                        <li><a href="#">HISTORY </a>
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span></li>
+                        <li><a href="#">GEOGRAPHY</a></li>
+                        <li><a href="#">ENGLISH</a></li>
+                        <li><a href="#">MATH</a></li>
+                      </ul>
+                    </li>
+                  <li><a href="#">previous papers<i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a href="#">notes<i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a href="#">magzine<i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+                <ul class="m-0">
+                  <li><a href="#">books <i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a href="#">previous papers<i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a href="#">notes<i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a href="#">magzine<i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+              </div>
+           
+              </li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><button class="login-button" href="#">Login</button></li>
@@ -139,6 +78,7 @@
       </nav>
       
     </header>
+    
   
 <section class="banner_section">
  <!-- Slider main container -->
@@ -187,11 +127,84 @@
 </div>
 </section>
 
+<section class="book-type">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="text-wrapper">
+        <p class="small-text"> Jhoony Esmod (Best Author)</p>
+        <h1 class="bold-heading">Good Author & Wonderful plotin one book altogether now. Kudos!</h1>
+       <button class="author-btn">about author</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="author_img">
+        <img src="assets/images/author.jpg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="shop-now">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="books-type">
+
+        <div class="card-group gap-4">
+          <div class="card px-2">
+            <div class="card-size">
+            <img src="assets/images/book1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"></p>
+              <p class="card-text"><small class="text-muted">Last </small></p>
+            </div>
+          </div>
+          </div>
+          <div class="card p-4">
+            <img src="assets/images/book1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card p-4">
+            <img src="assets/images/book1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- <div class="book-1"><img src="assets/images/book1.jpg" alt="">hhhhh</div>
+        <div class="book-2"><img src="assets/images/book1.jpg" alt=""></div>
+        <div class="book-3"><img src="assets/images/book1.jpg" alt=""></div> -->
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="text-wrapper2">
+        <h1 class="bold-heading">50% Sale!</h1>
+        <p class="small-text"> Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking. If on prevailed concluded ye abilities.</p>
+       <button class="author-btn">shop now</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slides-section mt-4">
+
+</section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <script src="assets/custom.js"></script>
+      <script>
+        
+      </script>
 </body>
 
 </html>
