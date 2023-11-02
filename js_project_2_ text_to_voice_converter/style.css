@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #010758, #490d61);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 2rem;
+}
+.hero h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+.hero h1 span {
+  color: red;
+}
+.hero textarea {
+  width: 500px;
+  height: 200px;
+  border-radius: 2rem solid #ccc;
+  padding: 4px 3px;
+  margin: 2px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.hero textarea::-moz-placeholder {
+  padding: 1rem 1rem;
+}
+.hero textarea::placeholder {
+  padding: 1rem 1rem;
+}
+.hero select {
+  width: 300px;
+  height: 50px;
+  border-radius: 2rem;
+  padding: 2px;
+  outline: none;
+  border: none;
+}
+.hero button {
+  color: #fff;
+  background-color: red;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding-left: 2rem;
+}
+.hero button i {
+  margin-right: 1rem;
+  background-color: transparent;
+}/*# sourceMappingURL=style.css.map */
