@@ -19,14 +19,13 @@ let winPos = [
 
 function disabledBtn(status) {
   for (let btn of playBtns) {
-    if(status === true){
-        btn.disabled = true;
-    } else{
-        btn.innerText = "";
-        btn.disabled = false;
-        turn0 = true;
+    if (status === true) {
+      btn.disabled = true;
+    } else {
+      btn.innerText = "";
+      btn.disabled = false;
+      turn0 = true;
     }
-    
   }
 }
 
@@ -57,21 +56,39 @@ function checkWinner() {
         confetti.classList.remove("hide");
         winnerName.innerText = val1;
         disabledBtn(true);
+      }
     }
-}
-}
+  }
 }
 
 resetBtn.forEach((resetBt) => {
-    resetBt.addEventListener("click", ()=>{
-        disabledBtn(false);
-        turn0 = true;
-        if(!(msg[0].classList.contains("hide"))){
-            msg[0].classList.add("hide");
-            confetti.classList.add("hide");
-            console.log('I AM CLICKED BY NEW Game')
-        }
-    });
+  resetBt.addEventListener("click", () => {
+    disabledBtn(false);
+    turn0 = true;
+    if (!msg[0].classList.contains("hide")) {
+      msg[0].classList.add("hide");
+      confetti.classList.add("hide");
+      console.log("I AM CLICKED BY NEW Game");
+    }
+  });
 });
 
-// checkWinner();
+
+
+function div(){
+
+  let div = document.createElement("div");
+  div.className = "new_div";
+  div.innerText = "hello";
+  div.classList.add("show");
+   if(div.classList.contains("!hide")){
+    div.innerText = "yes";
+   }else{div.innerText = "no";};
+
+}
+
+div();
+
+
+
+ 
